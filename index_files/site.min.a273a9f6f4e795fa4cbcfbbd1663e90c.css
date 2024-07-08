@@ -1,0 +1,13 @@
+.cmp-search{position:relative}
+.cmp-search__field{position:relative;height:2rem}
+.cmp-search__input{padding-left:2rem;padding-right:2rem;height:100%;width:100%}
+.cmp-search__icon{display:block;position:absolute;left:.5rem;top:.5rem;background-image:url("c2872fac6feacf03bfdfcb6023f6fb876f807a26.svg");background-size:contain;width:1rem;height:1rem;pointer-events:none}
+.cmp-search__loading-indicator{display:none;position:absolute;top:.5rem;left:.5rem;border:3px solid #ccc;border-top-color:#333;border-radius:50%;width:1rem;height:1rem;animation:cmp-search__loading-indicator-spin 2s linear infinite}
+@keyframes cmp-search__loading-indicator-spin{0{transform:rotate(0)}
+100%{transform:rotate(360deg)}
+}
+.cmp-search__clear{display:none;margin:0;padding:0;border:0;background:transparent}
+.cmp-search__clear-icon{position:absolute;top:.5rem;right:.5rem;background-image:url("0a3bcf7e4a169417098e9283be739de287b806e8.svg");background-size:contain;width:1rem;height:1rem}
+.cmp-search__results{display:none;overflow-y:auto;min-width:100%;max-height:10rem;position:absolute;top:100%;left:0;z-index:999999;border:1px solid #ccc;background:#fff}
+.cmp-search__item{display:block}
+.cmp-search__item--is-focused{background-color:#ccc}
